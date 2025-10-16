@@ -7,7 +7,7 @@ It is designed to be **secure, reliable, and accessible via HTTPS**.
 
 
 > Note: Jenkins can be hosted in several ways depending on your infrastructure and scalability needs:
->
+> Note: Here in our case we put jenkins in the public subnet but the best practice is to keep in private subnet of internal traffic only and expose it others by using Load Balancer or nginx using reverse proxy so the nginx is only exposed jenkins stays private but to save cost for my personal use we kept it on the public subnet.
 > - **EC2 Instance:** Deploy Jenkins on a virtual server for full control over OS and configuration.
 > - **ECS / Fargate:** Containerize Jenkins and run it on AWS ECS or Fargate for easier scaling and management.
 > - **Serverless Pipelines:** Use AWS services like Lambda, CodeBuild, and CodePipeline to run Jenkins tasks without managing servers.
